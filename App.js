@@ -34,7 +34,7 @@ export default class App extends Component {
         {/* <SqurePage></SqurePage> */}
 
         {/* 九宫格 */}
-        {/* <Lucker></Lucker> */}
+        <Lucker></Lucker>
 
         {/* infos */}
         {/* <Infos></Infos> */}
@@ -43,7 +43,7 @@ export default class App extends Component {
         {/* <BTextInput></BTextInput> */}
 
         {/* loginView */}
-        <LoginView></LoginView>
+        {/* <LoginView></LoginView> */}
 
 
       </Resolution.FixWidthView>

@@ -43,7 +43,7 @@ export default class Lucker extends Component {
           <View style={styles.imgWrapper}>
             {
               this.state.arr.map((val, index) => {
-                return <Image key={index} source={require('../../66.jpg')} 
+                return <Image key={index} source={require('../img/66.jpg')} 
                 style={[styles.imgBox, {borderColor: this.state.boxStyle[index]}]} />
               })
             }
@@ -58,7 +58,7 @@ export default class Lucker extends Component {
               ]
             )}>
             <View style={styles.btn}>
-              <Image source={require('../../66.jpg')} style={styles.images} />
+              <Image source={require('../img/66.jpg')} style={styles.images} />
             </View>
           </TouchableHighlight>
 
