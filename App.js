@@ -15,6 +15,8 @@ import Lucker from './src/componets/lucker'
 import Infos from './src/componets/infos'
 import BTextInput from './src/componets/BTextInput'
 import LoginView from './src/componets/loginView'
+import DTouchabel from './src/componets/touch'
+import ScrollView from './src/componets/scrollView'
 
 import Resolution from "./Resolution";
 
@@ -34,7 +36,7 @@ export default class App extends Component {
         {/* <SqurePage></SqurePage> */}
 
         {/* 九宫格 */}
-        <Lucker></Lucker>
+        {/* <Lucker></Lucker> */}
 
         {/* infos */}
         {/* <Infos></Infos> */}
@@ -44,6 +46,12 @@ export default class App extends Component {
 
         {/* loginView */}
         {/* <LoginView></LoginView> */}
+
+        {/* DTouch */}
+        {/* <DTouchabel></DTouchabel> */}
+
+        {/* ScrollView */}
+        <ScrollView></ScrollView>
 
 
       </Resolution.FixWidthView>
