@@ -4,7 +4,6 @@ import {
   StyleSheet,
   Text,
   View,
-  Alert,
   TouchableHighlight,
   Image,
   TextInput
@@ -100,7 +99,8 @@ settingStyle:{
   flexDirection:'row',
   // 主轴的对齐方式
   width:mwidth*0.9,
-  justifyContent:'space-between'
+  justifyContent:'space-between',
+  marginTop: 20,
 },
 otherLoginStyle:{
   // 设置主轴的方向
@@ -108,9 +108,11 @@ otherLoginStyle:{
   // 设置侧轴的对齐方式
   alignItems:'center',
   // 绝对定位
-  position:'absolute',
-  bottom:20,
-  left:30
+  // position:'absolute',
+  // bottom:20,
+  // left:30
+
+  marginTop: 30,
 },
 otherImageStyle:{
   width:50,

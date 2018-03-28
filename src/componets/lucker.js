@@ -24,16 +24,26 @@ export default class Lucker extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      arr: [1,2,3,4,5,6,7,8,9],
       focNum: 0,
-      boxStyle: ['transparent','transparent','transparent','red','transparent','transparent','transparent','transparent','transparent']
+      imgLinks: ['../img/66.jpg','../img/66.jpg','../img/66.jpg','../img/66.jpg','../img/66.jpg','../img/66.jpg','../img/66.jpg','../img/66.jpg','../img/66.jpg']
     }
   }
   altMsg(){
-    this.setState = ({
-      boxStyle: ['transparent','transparent','transparent','transparent','transparent','transparent','transparent','transparent','transparent']
+    var rum = Math.floor(Math.random()*9).toString();
+    this.setState({
+      focNum: rum,
     })
-    return Math.floor(Math.random()*6).toString();
+    return rum
+  }
+  onPress(){
+    Alert.alert(
+      'Alert Title',
+      this.altMsg(),
+      [
+        {text: 'OK', onPress: () => console.log('OK Pressed')},
+      ],
+      { cancelable: false }
+    )  
   }
 
   render() {
@@ -42,21 +52,15 @@ export default class Lucker extends Component {
           {/* 九宫格 */}
           <View style={styles.imgWrapper}>
             {
-              this.state.arr.map((val, index) => {
+              this.state.imgLinks.map((val, index) => {
                 return <Image key={index} source={require('../img/66.jpg')} 
-                style={[styles.imgBox, {borderColor: this.state.boxStyle[index]}]} />
+                style={[styles.imgBox, {borderColor: this.state.focNum == index ? 'red' : 'transparent'}]} />
               })
             }
           </View>
 
           <TouchableHighlight style={styles.wrapper}
-            onPress={() => Alert.alert(
-              'Alert Title',
-              this.altMsg(),
-              [
-                {text: 'OK', onPress: () => console.log('OK Pressed!')},
-              ]
-            )}>
+            onPress={ this.onPress.bind(this) }>
             <View style={styles.btn}>
               <Image source={require('../img/66.jpg')} style={styles.images} />
             </View>

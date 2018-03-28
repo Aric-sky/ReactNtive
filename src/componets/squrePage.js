@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
 
   outViewStyle:{
-     backgroundColor:'red',
+    //  backgroundColor:'red',
      // 设置侧轴的对齐方式
      alignItems:'center',
      width:boxW,
@@ -79,10 +79,12 @@ const styles = StyleSheet.create({
      marginLeft:vMargin,
      marginTop:hMargin
   },
-
   imageStyle:{
      width:80,
      height:80
+  },
+  mainTitleStyle: {
+    marginTop: 10,
   },
 
 });

@@ -24,7 +24,7 @@ export default class Head extends Component {
     return (
       <View style={styles.headWrap}>
           <Text style={styles.head}>
-            React Native!
+            幸运抽奖
           </Text>
 
       </View>
@@ -40,12 +40,13 @@ const styles = StyleSheet.create({
   },
   head: {
     flex: 1,
-    fontSize: 30,
-    height: 40,
-    lineHeight: 40,
-    color: '#fff',
+    fontSize: 36,
+    height: 60,
+    lineHeight: 60,
+    color: '#000',
     marginTop: 35,
-    backgroundColor: 'green',
+    marginBottom: 10,
+    backgroundColor: 'rgba(255,229,65,1)',
     textAlign:'center'
   },
 
